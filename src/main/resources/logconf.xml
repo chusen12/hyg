@@ -1,0 +1,28 @@
+<configuration>
+    <logProperties>
+        <log-class>
+            <sparkAppName>ClassAnalysis</sparkAppName>
+            <source>d:/test/hygclass.log</source>
+            <splitSeparator>\t</splitSeparator>
+            <items>category,classname,classhour,classday,studynum,collectnum,classmoney</items>
+            <loglength>7</loglength>
+            <itemsDescribe>日期,分类,课程名称,总课时,学习周期,学习人数,收藏人数,课程费用</itemsDescribe>
+        </log-class>
+        <log-position>
+            <sparkAppName>PositionAnalyis</sparkAppName>
+            <source>d:/test/hygposition.log</source>
+            <splitSeparator>\t</splitSeparator>
+            <items>positionName,companyName,salary,study,workyear,peopleNum,location,updatetime</items>
+            <loglength>8</loglength>
+            <itemsDescribe>职位名称,公司名称,薪水,学历,工作经验,招聘人数,工作地点,更新时间</itemsDescribe>
+        </log-position>
+    </logProperties>
+    <dbSource>
+        <db>
+            <url>jdbc:mysql://114.116.24.204:3306/hyg</url>
+            <driver>com.mysql.jdbc.Driver</driver>
+            <username>root</username>
+            <password>19971202chuSen@</password>
+        </db>
+    </dbSource>
+</configuration>
